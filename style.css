@@ -1,0 +1,240 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Domine", serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    /* 100 view port(vh it is a unit)= full screen of your laptop */
+    position: relative; 
+    /*postion related to normal position */
+}
+#navbar{
+    display:flex;
+    /*to make child element to inline*/
+    width: 85%;
+    /* containers(100%) 85% of width it is taking*/
+    margin-left: 100px;
+    justify-content: space-between;
+    /* it place the content in two sides */
+    align-items: center;
+    /* to place a content exactly in vertical */
+}
+
+#logo{
+    width: 130px;
+    }
+
+.listitem{
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+/* decentent selector */
+.listitem a{
+    color: black;
+    text-decoration: none; /* to remove underline*/
+    font-weight:000;
+}
+/* pseudo selector -REPRESTENT STAE */
+.listitem a:hover{
+    color: rgb(255, 0, 0);
+}
+#title{
+    margin-top: 20%;
+    margin-left: 10%;
+}
+#title h1{
+    font-size: 50px ;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+#lastname{
+    color: orange;
+}
+#title p{
+    margin-bottom: 20px;
+}
+#download{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+#images{
+    width: 45%;
+    position: absolute; 
+    right: 0px;
+    bottom: 0px;
+    height: 85%;
+}
+.imageGroup{
+
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 2s;
+
+}
+#images:hover #shape{
+    bottom: 70px;
+}
+#images:hover #girl{
+    left: 40%;
+}
+#intro{
+    color: rgb(18, 156, 18);
+}
+#about{
+    margin: 14% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h1{
+    font-size: 25px;
+}
+.heading span{
+    color: green;
+}
+#about_content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    margin-top: 2rem;
+}
+#aboutImg img{
+    width: 81%;
+}
+#about_details p{
+    font-size: 16px;
+    text-align: justify;
+}
+#information{
+    margin-top: 2rem;
+}
+.info_box{
+    margin: 1rem 0;
+}
+.info_box span{
+    marmargin-left: 1rem;
+    font-size: 16px;
+}
+#skill{
+    margin: 8% 8% 0 8%;
+}
+#skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 4rem;
+    margin-top: 2rem;
+
+}
+#skill-img img{
+width: 90%;
+}
+.barcontainer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.barcontainer span{
+    font-size: 20px;
+    font-weight: 600;
+}
+.basebar{
+    width: 100%;
+    background-color: black;
+    height: 0.3rem;
+    border-radius: 5rem;
+    position: absolute;
+    bottom: 0px;
+}
+#html-bar{
+    background-color: orange;
+    width: 95%;
+}
+#css-bar{
+    background-color: orange;
+    width: 65%;
+}
+#js-bar
+{
+    background-color: orange;
+    width: 75%;
+}
+#sql-bar{
+    background-color: orange;
+    width: 55%;
+}
+#icon-set{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 4%;
+}
+.icon,#up-arrow{
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid black; */
+    /* to display the listed items in horizontall mannar */
+    display: flex;
+    /* horizontally at center */
+    justify-content:center;
+    /* vertically at center */
+    align-items: center; 
+    margin: 10px 20px;
+    /* if border raduio */
+    border-radius: 50%;
+}
+.icon a{
+    color: black;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,yellow,rgb(211, 128, 4));
+    
+}
+.icon:hover i{
+    color: white;
+}
+.icon:hover i{
+    animation: anime 0.75s;
+}
+@keyframes anime{
+    25%{
+        transform: rotate(15deg);
+    }
+    30%{
+        transform: rotate(-15deg);
+    }
+    40%
+    {
+        transform: rotate(15deg);
+    }
+    55%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    padding: 4rem;
+}
+footer p{
+    text-align: center;
+    font-weight: 000;
+}
+#up-arrow{
+    background-image: linear-gradient(to bottom right,yellow,rgb(211, 128, 4));
+    float: right;
+}
+#up-arrow:hover a{
+    color: white;
+}
+html{
+    scroll-behavior: smooth;
+}

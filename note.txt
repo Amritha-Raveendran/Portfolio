@@ -1,0 +1,25 @@
+unit-> "rem"
+------------
+rem is a unit like fr,px etc.
+1rem=6px.
+if you provide a font size then the rem size is same as font size.
+
+css 27/08/24
+-------------
+#aboutimage img{
+    width:88%
+}
+#about-details p{
+    font-size:20px;
+    text-align: justify;
+}
+#info-box{
+    margin:1rem 0;
+}
+.infobox span{
+    margin-left:1rem;
+    font-size:20px;
+}
+
+skills
+------
